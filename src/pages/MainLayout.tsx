@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
+import Header from "../components/organism/Header";
 
 const MainLayout = () => {
   return (
     <div>
-      <p>Header</p>
+      <Header />
       <Outlet />
-      <p>Footer</p>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import MainLayout from "./pages/MainLayout";
+import VideoList from "./pages/VideoList";
 import VideoDetail from "./pages/VideoDetail";
-import Videos from "./pages/Videos";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Videos />,
+        element: <VideoList />,
       },
       {
         path: "/videos",
