@@ -1,10 +1,14 @@
+import { useRecoilValue } from "recoil";
+import { videosInfoAtom } from "../store";
 import Cards from "../components/organism/Cards";
 
 const VideoList = () => {
+  const { queryKey, fn } = useRecoilValue(videosInfoAtom);
+
   return (
-    <div>
-      <Cards />
-    </div>
+    <>
+      <Cards queryKey={queryKey} fn={() => fn()} />
+    </>
   );
 };
 

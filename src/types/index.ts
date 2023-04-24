@@ -1,6 +1,11 @@
+export interface IVideosInfo {
+  queryKey: string[];
+  fn: () => Promise<any>;
+}
+
 export interface IVideo {
   etag: any;
-  id: string;
+  id: any;
   kind: string;
   snippet: {
     categoryId: string;
