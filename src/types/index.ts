@@ -1,6 +1,16 @@
+import { VIDEO_TYPE } from "../store";
+
+export type VIDEO_TYPE = (typeof VIDEO_TYPE)[keyof typeof VIDEO_TYPE];
+export type VIDEO_KEYS = [
+  string,
+  { type: VIDEO_TYPE },
+  { search: string | undefined },
+  { detailId: string | undefined }
+];
+
 export interface IVideosInfo {
-  queryKey: string[];
-  fn: () => Promise<any>;
+  queryKey: VIDEO_KEYS;
+  queryFn: () => Promise<any>;
 }
 
 export interface IVideo {

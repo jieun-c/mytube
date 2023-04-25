@@ -1,21 +1,29 @@
 import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { MdOndemandVideo, MdSearch } from "react-icons/md";
-import { keyAtom, KEYS } from "../../store";
+import { videoKeysAtom, VIDEO_TYPE } from "../../store";
 
 const Header = () => {
-  const [key, setKey] = useRecoilState(keyAtom);
+  const [keys, setKeys] = useRecoilState(videoKeysAtom);
   const [input, setInput] = useState("");
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if (searchParams) {
-      // searchParams 를 기준으로 key, input setting
-      setKey([KEYS[1], searchParams.get("q") ?? ""]);
+    if (searchParams.get("q")) {
+      setKeys((prev) => [
+        prev[0],
+        { type: VIDEO_TYPE.SEARCH },
+        { search: searchParams.get("q") ?? "" },
+        prev[3],
+      ]);
       setInput(searchParams.get("q") ?? "");
+    } else {
+      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, prev[3]]);
+      setInput("");
     }
-  }, [searchParams, setKey]); // 뒤로가기 감지
+  }, [searchParams, setKeys]);
 
   const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.currentTarget.value);
@@ -24,20 +32,18 @@ const Header = () => {
   const onSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    // input 을 기준으로 key, SearchParams setting
     if (!input) {
       onReset();
     } else {
-      setKey([KEYS[1], input]);
-      setSearchParams({ q: input });
+      navigate({
+        pathname: "/",
+        search: `q=${input}`,
+      });
     }
   };
 
   const onReset = () => {
-    setInput("");
-    setKey([KEYS[0], ""]);
-    searchParams.delete("q");
-    setSearchParams(searchParams);
+    navigate("/");
   };
 
   return (

@@ -3,11 +3,11 @@ import { videosInfoAtom } from "../store";
 import Cards from "../components/organism/Cards";
 
 const VideoList = () => {
-  const { queryKey, fn } = useRecoilValue(videosInfoAtom);
+  const { queryKey, queryFn } = useRecoilValue(videosInfoAtom);
 
   return (
     <>
-      <Cards queryKey={queryKey} fn={() => fn()} />
+      <Cards queryKey={queryKey} queryFn={() => queryFn()} />
     </>
   );
 };

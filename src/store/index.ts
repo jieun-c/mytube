@@ -1,7 +1,10 @@
 import { atom, selector } from "recoil";
-import { IVideosInfo } from "./../types/index";
+import { IVideosInfo, VIDEO_KEYS } from "./../types/index";
 
-export const KEYS = ["popular", "search"];
+export const VIDEO_TYPE = {
+  POPULAR: "popular",
+  SEARCH: "search",
+};
 
 const getData = () => {
   return fetch("/videos.json")
@@ -15,29 +18,21 @@ const getSearchData = () => {
     .then((data) => data.items);
 };
 
-export const keyAtom = atom({
-  key: "key",
-  default: [KEYS[0], ""],
+export const videoKeysAtom = atom({
+  key: "videoKeysAtom",
+  default: ["videos", { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }] as VIDEO_KEYS,
 });
-
-// const initialVideosInfoAtom = atom({
-//   key: "initialInfoAtom",
-//   default: {
-//     queryKey: [KEYS[0], ""],
-//     fn: () => getData(),
-//   },
-// });
 
 export const videosInfoAtom = selector({
   key: "videosInfoAtom",
   get: ({ get }) => {
-    const key = get(keyAtom);
+    // info 는 key 를 구독한다.
+    const currentKey = get(videoKeysAtom);
 
-    // key[0] 가 search 이고, key[1] 에 값(search keyword)이 있을 경우,
-    if (key[0] === KEYS[1] && key[1]) {
-      return { queryKey: [KEYS[1], ""], fn: () => getSearchData() } as IVideosInfo;
+    // 구독한 key 에 따라, fn 과 함께 묶어서 return 한다.
+    if (currentKey[1].type === VIDEO_TYPE.SEARCH && currentKey[2].search) {
+      return { queryKey: currentKey, queryFn: () => getSearchData() } as IVideosInfo;
     }
-
-    return { queryKey: [KEYS[0], ""], fn: () => getData() } as IVideosInfo;
+    return { queryKey: currentKey, queryFn: () => getData() } as IVideosInfo;
   },
 });
