@@ -18,9 +18,25 @@ const getSearchData = () => {
     .then((data) => data.items);
 };
 
+const sessionStorageEffect =
+  (key: string) =>
+  ({ setSelf, onSet }: any) => {
+    const savedValue = sessionStorage.getItem(key);
+    if (savedValue !== null) {
+      setSelf(JSON.parse(savedValue));
+    }
+    onSet((newValue: any, _: any, isReset: any) => {
+      const confirm = newValue.length === 0;
+      confirm
+        ? sessionStorage.removeItem(key)
+        : sessionStorage.setItem(key, JSON.stringify(newValue));
+    });
+  };
+
 export const videoKeysAtom = atom({
   key: "videoKeysAtom",
   default: ["videos", { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }] as VIDEO_KEYS,
+  effects: [sessionStorageEffect("videoKeys")],
 });
 
 export const videosInfoAtom = selector({

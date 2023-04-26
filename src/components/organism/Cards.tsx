@@ -18,10 +18,12 @@ const Cards = ({ queryKey, queryFn }: IVideosInfo) => {
     <div className="p-3 max-w-7xl mx-auto">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {queryKey[1].type === VIDEO_TYPE.POPULAR &&
-          videos.map((video: IVideo) => <Card key={video.id} video={video} />)}
+          videos.map((video: IVideo) => <Card key={video.id} video={video} id={video.id} />)}
 
         {queryKey[1].type === VIDEO_TYPE.SEARCH &&
-          videos.map((video: IVideo) => <Card key={video.id.videoId} video={video} />)}
+          videos.map((video: IVideo) => (
+            <Card key={video.id.videoId} video={video} id={video.id.videoId} />
+          ))}
       </div>
     </div>
   );
