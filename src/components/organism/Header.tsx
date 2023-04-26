@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     // HOME
-    if (!searchParams.get("q") && !keys[3].detailId) {
+    if (!searchParams.get("q") && !param.videoId) {
       onReset();
     }
     // 검색
