@@ -18,6 +18,7 @@ const getSearchData = () => {
     .then((data) => data.items);
 };
 
+// q, videoId 가 분리되어있어 sessionStorage 로 데이터 관리
 const sessionStorageEffect =
   (key: string) =>
   ({ setSelf, onSet }: any) => {
