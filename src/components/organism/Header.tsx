@@ -30,7 +30,7 @@ const Header = () => {
         setKeys((prev) => [prev[0], { search: keys[1].search }, { detailId: param.videoId }]);
       }
     }
-  }, [searchParams.get("q"), param.videoId]); // 비디오 아이디 의존성
+  }, [searchParams.get("q"), param.videoId]);
 
   const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.currentTarget.value);
@@ -39,16 +39,20 @@ const Header = () => {
   const onSubmit = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    if (!input) {
+    const str = input.replace(/^\s+|\s+$/gm, "");
+
+    if (!str) {
       onReset();
     } else {
-      setKeys((prev) => [prev[0], { search: input }, prev[2]]);
+      setKeys((prev) => [prev[0], { search: str }, prev[2]]);
 
       navigate({
         pathname: "/",
-        search: `q=${input}`,
+        search: `q=${str}`,
       });
     }
+
+    setInput(str);
   };
 
   const onReset = () => {
