@@ -1,12 +1,10 @@
-import { VIDEO_TYPE } from "../store";
+// export const VIDEO_TYPE = {
+//   POPULAR: "popular",
+//   SEARCH: "search",
+// };
+// type VIDEO_TYPE = (typeof VIDEO_TYPE)[keyof typeof VIDEO_TYPE];
 
-export type VIDEO_TYPE = (typeof VIDEO_TYPE)[keyof typeof VIDEO_TYPE];
-export type VIDEO_KEYS = [
-  string,
-  { type: VIDEO_TYPE },
-  { search: string | undefined },
-  { detailId: string | undefined }
-];
+export type VIDEO_KEYS = [string, { search: string | undefined }, { detailId: string | undefined }];
 
 export interface IVideosInfo {
   queryKey: VIDEO_KEYS;

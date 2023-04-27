@@ -1,42 +1,12 @@
 import { atom, selector } from "recoil";
-import { IVideosInfo, VIDEO_KEYS } from "./../types/index";
+import { getPopularMock, getSearchMock } from "../service";
+import { sessionStorageEffect } from "../utils";
+import { IVideosInfo, VIDEO_KEYS } from "./../types";
 
-export const VIDEO_TYPE = {
-  POPULAR: "popular",
-  SEARCH: "search",
-};
-
-const getData = () => {
-  return fetch("/videos.json")
-    .then((res) => res.json())
-    .then((data) => data.items);
-};
-
-const getSearchData = () => {
-  return fetch("/search.json")
-    .then((res) => res.json())
-    .then((data) => data.items);
-};
-
-// q, videoId 가 분리되어있어 sessionStorage 로 데이터 관리
-const sessionStorageEffect =
-  (key: string) =>
-  ({ setSelf, onSet }: any) => {
-    const savedValue = sessionStorage.getItem(key);
-    if (savedValue !== null) {
-      setSelf(JSON.parse(savedValue));
-    }
-    onSet((newValue: any, _: any, isReset: any) => {
-      const confirm = newValue.length === 0;
-      confirm
-        ? sessionStorage.removeItem(key)
-        : sessionStorage.setItem(key, JSON.stringify(newValue));
-    });
-  };
-
+// (q, videoId 가 분리되어있어 sessionStorage 로 데이터 관리)
 export const videoKeysAtom = atom({
   key: "videoKeysAtom",
-  default: ["videos", { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }] as VIDEO_KEYS,
+  default: ["videos", { search: "" }, { detailId: "" }] as VIDEO_KEYS,
   effects: [sessionStorageEffect("videoKeys")],
 });
 
@@ -47,9 +17,12 @@ export const videosInfoAtom = selector({
     const currentKey = get(videoKeysAtom);
 
     // 구독한 key 에 따라, fn 과 함께 묶어서 return 한다.
-    if (currentKey[1].type === VIDEO_TYPE.SEARCH && currentKey[2].search) {
-      return { queryKey: currentKey, queryFn: () => getSearchData() } as IVideosInfo;
+    if (currentKey[1].search) {
+      return {
+        queryKey: currentKey,
+        queryFn: () => getSearchMock(currentKey[1].search ?? ""),
+      } as IVideosInfo;
     }
-    return { queryKey: currentKey, queryFn: () => getData() } as IVideosInfo;
+    return { queryKey: currentKey, queryFn: () => getPopularMock() } as IVideosInfo;
   },
 });

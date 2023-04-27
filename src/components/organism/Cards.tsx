@@ -1,30 +1,15 @@
-import { useQuery } from "@tanstack/react-query";
-import { VIDEO_TYPE } from "../../store";
-import { IVideo, IVideosInfo } from "../../types";
+import { IVideo } from "../../types";
 import Card from "../molecules/Card";
 
-const Cards = ({ queryKey, queryFn }: IVideosInfo) => {
-  const { isLoading, isError, data: videos } = useQuery({ queryKey, queryFn });
+const gridCss = "grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4";
+const miniCss = "md:w-1/3 md:h-[calc(100vh-60px-0.75rem-0.75rem)] md:overflow-y-auto [&>*]:mb-4";
 
-  if (isLoading) {
-    return <span>Loading...</span>;
-  }
-
-  if (isError) {
-    return <span>Error</span>;
-  }
-
+const Cards = ({ isDetail, videos }: any) => {
   return (
-    <div className="p-3 max-w-7xl mx-auto">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {queryKey[1].type === VIDEO_TYPE.POPULAR &&
-          videos.map((video: IVideo) => <Card key={video.id} video={video} id={video.id} />)}
-
-        {queryKey[1].type === VIDEO_TYPE.SEARCH &&
-          videos.map((video: IVideo) => (
-            <Card key={video.id.videoId} video={video} id={video.id.videoId} />
-          ))}
-      </div>
+    <div className={!isDetail ? gridCss : miniCss}>
+      {videos.map((video: IVideo) => (
+        <Card key={video.id} video={video} />
+      ))}
     </div>
   );
 };

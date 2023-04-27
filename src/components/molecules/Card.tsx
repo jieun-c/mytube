@@ -3,22 +3,22 @@ import { useRecoilState } from "recoil";
 import { IVideo } from "../../types";
 import { videoKeysAtom } from "../../store";
 
-const Card = ({ video, id }: { video: IVideo; id: string }) => {
+const Card = ({ video }: { video: IVideo }) => {
   const {
-    thumbnails: {
-      medium: { url },
-    },
     title,
     channelTitle,
     publishedAt,
+    thumbnails: {
+      medium: { url },
+    },
   } = video.snippet;
 
   const navigate = useNavigate();
   const [keys, setKeys] = useRecoilState(videoKeysAtom);
 
   const movePage = () => {
-    setKeys((prev) => [prev[0], prev[1], prev[2], { detailId: id }]);
-    navigate(`/videos/${id}`);
+    setKeys((prev) => [prev[0], prev[1], { detailId: video.id }]);
+    navigate(`/videos/${video.id}`, { state: { data: video } });
   };
 
   return (

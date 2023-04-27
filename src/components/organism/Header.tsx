@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { MdOndemandVideo, MdSearch } from "react-icons/md";
-import { videoKeysAtom, VIDEO_TYPE } from "../../store";
+import { videoKeysAtom } from "../../store";
 
 const Header = () => {
   const [keys, setKeys] = useRecoilState(videoKeysAtom);
@@ -19,31 +19,15 @@ const Header = () => {
     // 검색
     else if (searchParams.get("q")) {
       setInput(searchParams.get("q") ?? "");
-      setKeys((prev) => [
-        prev[0],
-        { type: VIDEO_TYPE.SEARCH },
-        { search: searchParams.get("q") ?? "" },
-        { detailId: "" },
-      ]);
+      setKeys((prev) => [prev[0], { search: searchParams.get("q") ?? "" }, { detailId: "" }]);
     }
     // 상세페이지
     else {
-      if (!keys[2].search) {
-        // setInput(keys[2].search ?? "");
-        setKeys((prev) => [
-          prev[0],
-          { type: VIDEO_TYPE.POPULAR },
-          { search: "" },
-          { detailId: param.videoId },
-        ]);
+      if (!keys[1].search) {
+        setKeys((prev) => [prev[0], { search: "" }, { detailId: param.videoId }]);
       } else {
-        setInput(keys[2].search ?? "");
-        setKeys((prev) => [
-          prev[0],
-          { type: VIDEO_TYPE.SEARCH },
-          { search: keys[2].search },
-          { detailId: param.videoId },
-        ]);
+        setInput(keys[1].search ?? "");
+        setKeys((prev) => [prev[0], { search: keys[1].search }, { detailId: param.videoId }]);
       }
     }
   }, [searchParams.get("q"), param.videoId]); // 비디오 아이디 의존성
@@ -58,7 +42,7 @@ const Header = () => {
     if (!input) {
       onReset();
     } else {
-      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.SEARCH }, { search: input }, prev[3]]);
+      setKeys((prev) => [prev[0], { search: input }, prev[2]]);
 
       navigate({
         pathname: "/",
@@ -68,7 +52,7 @@ const Header = () => {
   };
 
   const onReset = () => {
-    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }]);
+    setKeys((prev) => [prev[0], { search: "" }, { detailId: "" }]);
     setInput("");
     navigate("/");
   };
