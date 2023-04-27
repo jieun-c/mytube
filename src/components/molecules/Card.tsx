@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { IVideo } from "../../types";
 import { videoKeysAtom } from "../../store";
+import { timeForToday } from "../../utils";
 
 const Card = ({ video }: { video: IVideo }) => {
   const {
@@ -30,7 +31,9 @@ const Card = ({ video }: { video: IVideo }) => {
       <div className="p-1 flex flex-col flex-1">
         <p className="text-base font-bold flex-1 line-clamp-2">{title}</p>
         <p className="text-sm text-slate-500 pt-2 truncate ...">{channelTitle}</p>
-        <p className="text-sm text-slate-500">{new Date(publishedAt).toLocaleDateString()}</p>
+        <p className="text-sm text-slate-500">
+          {timeForToday(new Date(publishedAt).toLocaleDateString())}
+        </p>
       </div>
     </div>
   );
