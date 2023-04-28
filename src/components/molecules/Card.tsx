@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { IVideo } from "../../types";
+import { IVideo, VIDEO_TYPE } from "../../types";
 import { videoKeysAtom } from "../../store";
 import { timeForToday } from "../../utils";
 
@@ -18,8 +18,8 @@ const Card = ({ video }: { video: IVideo }) => {
   const [keys, setKeys] = useRecoilState(videoKeysAtom);
 
   const movePage = () => {
-    setKeys((prev) => [prev[0], prev[1], { detailId: video.id }]);
-    navigate(`/videos/${video.id}`, { state: { data: video } });
+    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.RELATED }, prev[2], { detailId: video.id }]);
+    navigate(`/detail/${video.id}`, { state: { data: video } });
   };
 
   return (

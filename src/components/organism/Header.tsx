@@ -1,36 +1,34 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";
+import { useNavigate, useMatch, useParams } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { MdOndemandVideo, MdSearch } from "react-icons/md";
 import { videoKeysAtom } from "../../store";
+import { VIDEO_TYPE } from "../../types";
 
 const Header = () => {
   const [keys, setKeys] = useRecoilState(videoKeysAtom);
-  const [input, setInput] = useState("");
-  const [searchParams] = useSearchParams();
-  const param = useParams();
+  const [input, setInput] = useState(keys[2].search ?? "");
   const navigate = useNavigate();
+  const params = useParams();
+  const mainMatch = useMatch("/");
+  const detailMatch = useMatch("/detail/:videoId");
+  const searchMatch = useMatch("/search");
 
+  // 주소직접접근, 뒤로가기 를 위한 초기화
   useEffect(() => {
-    // HOME
-    if (!searchParams.get("q") && !param.videoId) {
-      onReset();
+    if (mainMatch) {
+      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }]);
+    } else if (searchMatch) {
+      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.SEARCH }, prev[2], { detailId: "" }]);
+    } else if (detailMatch) {
+      setKeys((prev) => [
+        prev[0],
+        { type: VIDEO_TYPE.RELATED },
+        prev[2],
+        { detailId: params.videoId },
+      ]);
     }
-    // 검색
-    else if (searchParams.get("q")) {
-      setInput(searchParams.get("q") ?? "");
-      setKeys((prev) => [prev[0], { search: searchParams.get("q") ?? "" }, { detailId: "" }]);
-    }
-    // 상세페이지
-    else {
-      if (!keys[1].search) {
-        setKeys((prev) => [prev[0], { search: "" }, { detailId: param.videoId }]);
-      } else {
-        setInput(keys[1].search ?? "");
-        setKeys((prev) => [prev[0], { search: keys[1].search }, { detailId: param.videoId }]);
-      }
-    }
-  }, [searchParams.get("q"), param.videoId]);
+  }, [mainMatch, searchMatch, detailMatch]);
 
   const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInput(e.currentTarget.value);
@@ -40,23 +38,18 @@ const Header = () => {
     e.preventDefault();
 
     const str = input.replace(/^\s+|\s+$/gm, "");
+    if (!str) return;
 
-    if (!str) {
-      onReset();
-    } else {
-      setKeys((prev) => [prev[0], { search: str }, prev[2]]);
-
-      navigate({
-        pathname: "/",
-        search: `q=${str}`,
-      });
-    }
-
+    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.SEARCH }, { search: str }, prev[3]]);
     setInput(str);
+    navigate({
+      pathname: "/search",
+      search: `q=${str}`,
+    });
   };
 
   const onReset = () => {
-    setKeys((prev) => [prev[0], { search: "" }, { detailId: "" }]);
+    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }]);
     setInput("");
     navigate("/");
   };

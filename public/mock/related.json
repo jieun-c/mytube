@@ -1,0 +1,1063 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "bx1XHY0TA4ofvbQxpugvEmRPEd4",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 147,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Nv__vtWxSwXbGhYJVFm0SgQ1H8I",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "HYjomfgVAV0"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-27T02:17:46Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "문명을 등지고 땅속에 사는 사람",
+        "description": "▶관련 영상\n  •【잼잼마을 생활기】 1화 - 침착하우스 건축하기 (feat.혜요, 삼식 님): https://youtu.be/agXLnjBmRSs\n\n▶관련 재생목록\n  •침착맨의 짧게 한 게임들: https://youtube.com/playlist?list=PLif_jr7pPZACiQw3uIILLjASbbGKOS-u2\n\n▶생방송 원본\n  •2023년 4월 17일 방송분: https://www.youtube.com/live/yQQ8vs1Dgo8\n\n▶출연\n  •악어(@acau), 핑맨(@PPingMan), 멋사(@ms213), 릴카(@LILKA), 양띵(@yd0821), 침착맨\n\n#침착맨 #악어의놀이터 #마인크래프트\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n| [RFM] Royalty Free Music - ForArtist                                       |\n| Song: ESC - https://youtu.be/k4tdvE7Td48            |\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HYjomfgVAV0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HYjomfgVAV0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HYjomfgVAV0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HYjomfgVAV0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HYjomfgVAV0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-27T02:17:46Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "5C8CpqbdJahpEj2wgxH1dZ1ZHwk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mWqjFQ-nUuY"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-17T08:30:41Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "통닭천사의 특제 카레",
+        "description": "▶관련 영상\n  •통닭천사의 간장국수: https://youtu.be/EAJkJvk5Yf4\n\n▶관련 재생목록\n  •👨‍🍳불만 피우면 쿡방: https://youtube.com/playlist?list=PLif_jr7pPZACEQ8CWYYcC2GDDqsJ2icOv\n\n▶생방송 원본\n  •2023년 4월 11일 방송분: https://www.youtube.com/live/g54Fz-_ws6w\n\n▶출연\n  •통닭천사(@user-ts7rl8td6u), 침착맨\n\n#침착맨 #통닭천사 #카레 #쿡방",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mWqjFQ-nUuY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mWqjFQ-nUuY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mWqjFQ-nUuY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mWqjFQ-nUuY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mWqjFQ-nUuY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-17T08:30:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BIzLbhcjvllssPUkLb3SURomh3o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WV3KJ-DXKmg"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-24T01:59:27Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "양아치맛 잡채",
+        "description": "▶관련 영상\n  •임세모의 밥버거: https://www.youtube.com/watch?v=FNNi7FiMArM\n\n▶관련 재생목록\n  •👨‍🍳불만 피우면 쿡방: https://youtube.com/playlist?list=PLif_jr7pPZACEQ8CWYYcC2GDDqsJ2icOv\n\n▶생방송 원본\n  •2023년 4월 17일 방송분: https://www.youtube.com/live/15p14tpRDdU\n\n▶출연\n  •임세모(@IM_SEMO) ,침착맨\n\n#침착맨 #임세모 #잡채 #쿡방",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WV3KJ-DXKmg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WV3KJ-DXKmg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WV3KJ-DXKmg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WV3KJ-DXKmg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WV3KJ-DXKmg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-24T01:59:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "50JzKgb7pAbPT-FJyZM675ObQRg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "vO9sb-w1gdY"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-06T08:14:45Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "2023년 또 새롭게 태어난 NEW NEW 침착맨",
+        "description": "▶관련 영상\n  •2021년 새롭게 태어난 NEW 침착맨: https://youtu.be/qrWSm3fTao4\n\n▶관련 재생목록\n  •침착맨의 일상재롱: https://goo.gl/OJ4Uoa\n\n▶생방송 원본\n  •2023년 1월 2일 방송분: https://youtu.be/sQFhFXPV5og\n\n한촌설렁탕 - 김치만두 떡만두국: 10,000원\n\n#침착맨 #소통 #동시송출",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vO9sb-w1gdY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vO9sb-w1gdY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vO9sb-w1gdY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vO9sb-w1gdY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vO9sb-w1gdY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-06T08:14:45Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hMSUdr4qxj7x3_BeUWpRzVbk2-M",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WZS9GJiVunw"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-27T09:58:33Z",
+        "channelId": "UCVfLNEch9YxD4tX1L-crkMQ",
+        "title": "찰랑이는 은빛 물, 수은을 마시면 늙지않고 영원히 산다고 믿으면 벌어지는 일들ㅣ의학의 역사 수은 편",
+        "description": "닥터프렌즈 영상 보시고 기분 좋은 하루 되세요 😁\n구독은 건강입니다♥\n\n\n스튜디오 배경 속 초록빛 식물은 #나아바 #스마트그린월 🍃\n답답한 실내 공기를 핀란드 숲속 공기로 바꿔드립니다! :)\n🌳문의하기▷ https://linktr.ee/naava_korea\n#핀란드 #식물공기정화솔루션 #숲속공기 #나아바코리아 #NAAVA\n\n닥프가 만든 본격 정신과 심리상담게임 \"Help Me\"가 스팀에 출시되었어요 ;) \n스팀 링크 : https://store.steampowered.com/app/1557780/Help_Me/\n앱스토어와 구글스토어에서도  다운 받으실 수 있습니다! \n다이아마켓 링크(게임과 도담도담 마음카드 구입 가능) : https://bit.ly/3yZia9V\n\n인트로 음악 작사, 작곡 - 스텔라장 (고마워요!!👍❤)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WZS9GJiVunw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WZS9GJiVunw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WZS9GJiVunw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WZS9GJiVunw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/WZS9GJiVunw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "닥터프렌즈",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-27T09:58:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iUISGwQbNZ8Hc2UHEzxKApsyMZo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "vafafns1iTA"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-26T13:21:46Z",
+        "channelId": "UC920m3pMPH45qztdhppZhwA",
+        "title": "빅뱅의 '거짓말', '하루하루'로 히트 친 후 변한 것은? (ft.유두래곤) #highlight#유퀴즈온더블럭 | YOU QUIZ ON THE BLOCK EP.191",
+        "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n#유퀴즈 #유재석 #조세호\n유퀴즈온더블럭 YOU QUIZ ON THE BLOCK EP.191\n#태양은 가득히\n매주 (수) 저녁 8시 40분 tvN 방송\n\n#티빙에서스트리밍",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vafafns1iTA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vafafns1iTA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vafafns1iTA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vafafns1iTA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vafafns1iTA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "유 퀴즈 온 더 튜브",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-26T13:21:46Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PK9Dx_WKSARaIGkwjsIk84kOXPk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nZLSfnfYfoU"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-27T07:24:10Z",
+        "channelId": "UC-uIpGINZDL-VIHQQzJW8jw",
+        "title": "빠니보틀, 원지, 곽튜브 - 하와이 🎲✈│지구마불 세계여행 | TEO",
+        "description": "*With the support Hawaii Film Office 2022-0422\n\n빠니보틀, 원지, 곽튜브와 함께하는 🌎지구마불 세계여행🌎\n\n빠니보틀, 원지, 곽튜브의 하와이 여행기입니다.\n\n주사위 한 번에 대륙 이동 🌎지구마불 세계여행🌎\n🏷 TEO 유튜브 매주 목요일 저녁 6시\n🏷 TV판 ENA 매주 토요일 저녁 7시 50분 \n\n#빠니보틀 #원지의하루 #곽튜브 #지구마불세계여행 #지구마불 #TEO #테오 #세계여행 #ENA @teo.universe",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nZLSfnfYfoU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nZLSfnfYfoU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nZLSfnfYfoU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nZLSfnfYfoU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "TEO 테오",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-27T07:24:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "RX0ob9yjrWlXJX7JLPpr8E0NI3A",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "GQSSLlBKeSE"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-26T11:58:13Z",
+        "channelId": "UCRmm8763aqO0CoeLCA2jNSA",
+        "title": "[EN] 연예인과 일하는 학과 [성균관대 미디어커뮤니케이션학과] | 전과자 ep.21",
+        "description": "“소통 배우러 갔는데 소통이 안 돼요..🤐”\n\n스토리텔링부터 비언어적 소통법까지 싹 다 배우러\n문과 인기학과인 미컴 다녀옴!\n\n전과자 직장 동료의 깜짝 등장!\n전과자 본업으로 돌아가다..?😮\n\n공감과 정보와 추억을 모두 담은\n캠퍼스 문화 부흥 프로젝트\n\n📚 매일 전과하는 남자 [전과자] \n📚 매주 목요일 오후 6시\n\n#ootbSTUDIO #이창섭 #전과자\n\n\n본 영상은 LG전자의 제작 지원을 받았습니다.\n\n★중요 안내★ 스낵이들만을 위한 특별 혜택!\n[대학생 최대 21% 할인 + ☆네이버페이 포인트 10만원 증정☆]\n\n대학생 인증을 통한 \"LGE.COM 아카데미 스토어\" 가입 후, 아래 행사 링크를 접속해야만 혜택을 받으실 수 있습니다. \n주소에 \"990 gram\"키워드가 포함된 상태에서 구매하셔야 하며, 링크 이탈 후 결제 시에는 행사 대상에서 제외됩니다.  \n \n본 행사는 행사기간(4/27~5/18)내 아래 링크를 통해 LGE.COM 아카데미 스토어에서 행사 제품을 구매한 고객에게 지급됩니다.\n ☞ 행사 링크:  https://www.lge.co.kr/benefits/exhibitions/detail-PE00071001?ally_chnl_id=990gram\n \n- 행사 대상 모델 : LGE.COM 아카데미 스토어 입점 그램 전 모델\n- 네이버페이 포인트 발송 사전 안내 문자는 아래와 같이 발송될 예정입니다. \n   4/27일~5/1일 구매자 - 5/2일\n  5/2일~5/7일 구매자 - 5/8일\n   5/8일~5/14일 구매자 - 5/15일\n   5/15일~5/18일 구매자 - 5/19일\n\n- 네이버페이 포인트는 제품 구매 후,  6월 5일(월) 문자 발송을 통해 지급되며 당사 사정에 의해 지연될 수 있습니다.\n- 네이버페이 포인트 상품권은 네이버페이 사이트에서 쿠폰 등록을 통해 적립 포인트로 전환하여 사용 가능합니다.\n- 네이버페이 포인트 상품권은 LGE.COM 회원 정보에 따르며, 잘못된 정보 입력으로 인한 미발송/오발송은 당사에서 책임지지 않습니다.\n- 네이버페이 포인트 상품권은 유효기간(30일) 연장이 불가하오니 기한 내 사용 바랍니다.\n- 네이버페이 포인트는 네이버쇼핑/네이버웹툰/네이버예약을 비롯한 45 만개 이상 가맹점에서 현금처럼 이용하실 수 있습니다 .\n- 쿠폰으로 등록된 금액은 적립포인트로 지급되며, 취소 및 현금인출이 불가합니다.\n- 본 행사 내용은 당사 사정에 따라 예고 없이 변경 또는 중단될 수 있습니다.\n- 본 행사는 LGE.COM 단독 행사이며, 타 온라인 판매처 및 오프라인 매장과는 무관합니다.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GQSSLlBKeSE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GQSSLlBKeSE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GQSSLlBKeSE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GQSSLlBKeSE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GQSSLlBKeSE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ootb STUDIO",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-26T11:58:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "fdsFzyaSrm-oqfvCA9ba_xNjPq4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "7W_Gi4TugVs"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-26T07:07:50Z",
+        "channelId": "UC7uDyFIqExDnfXAIZqumFrQ",
+        "title": "뉴욕 지하철이 최악이라 불리는 이유",
+        "description": "#뉴욕 #뉴욕여행 #미국여행 \n\n뉴욕 지하철은 정말 최악일까?\n뉴욕 추억의 맛집과 센트럴 파크 산책",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7W_Gi4TugVs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7W_Gi4TugVs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7W_Gi4TugVs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7W_Gi4TugVs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/7W_Gi4TugVs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "셜록현준",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-26T07:07:50Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "f17u515FmTH9JwfAdtf7065Zqfs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rd2qDgHC1vg"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-25T03:08:45Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "임용한 박사님의 '전쟁사의 오해와 진실' 특강",
+        "description": "▶관련 영상\n  •밀덕이 훌륭한 지휘관이 될 수 있을까?: https://youtu.be/a6Kw3GQxcKg\n\n▶관련 재생목록\n  •침착맨과 특강: https://youtube.com/playlist?list=PLif_jr7pPZACfoFhBRTYpuhGn9etcTS3n\n\n▶생방송 원본\n  •2022년 12월 20일 방송분: https://youtu.be/YnbJporib50\n\n▶출연\n  •임용한(@Limyonghan-TV), 침착맨\n\n#침착맨 #임용한 #전쟁사",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rd2qDgHC1vg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rd2qDgHC1vg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rd2qDgHC1vg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/rd2qDgHC1vg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/rd2qDgHC1vg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-25T03:08:45Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4uE79eRC4bmO9b_ipu6mNm0GCd8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mllPpHzhSpU"
+      },
+      "snippet": {
+        "publishedAt": "2021-07-27T09:06:58Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "침&펄이 제작하고 싶은 영화 장르 월드컵",
+        "description": "▶침착맨의 【이상형 월드컵】 재생목록: https://www.youtube.com/playlist?list=PLif_jr7pPZAAGRKOHgas0qm05Ha_wMUmN&disable_polymer=true\n\n▶편집: 전수만 (4호 침투부수호자)\n\n▶2021년 7월 19일 방송분\n(https://youtu.be/KgAj4WIbVe8​)\n\n#침착맨 #영화 #이상형월드컵",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mllPpHzhSpU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mllPpHzhSpU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mllPpHzhSpU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mllPpHzhSpU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mllPpHzhSpU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-07-27T09:06:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "_q6FT9n4cE65JAEiwmuMDMWISgw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Srmmg4ebrbM"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-26T13:21:19Z",
+        "channelId": "UC920m3pMPH45qztdhppZhwA",
+        "title": "여러부우운~! 너무 보고 싶었어엉~ 태양 사랑꾼💘 프레임 썰 #highlight#유퀴즈온더블럭 | YOU QUIZ ON THE BLOCK EP.191",
+        "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n#유퀴즈 #유재석 #조세호\n유퀴즈온더블럭 YOU QUIZ ON THE BLOCK EP.191\n#태양은 가득히\n매주 (수) 저녁 8시 40분 tvN 방송\n\n#티빙에서스트리밍",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Srmmg4ebrbM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Srmmg4ebrbM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Srmmg4ebrbM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Srmmg4ebrbM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Srmmg4ebrbM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "유 퀴즈 온 더 튜브",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-26T13:21:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Z9wn5QMLbMIhKod5IQ5HM8i0yWU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6sgjYvrj4cQ"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-25T07:19:43Z",
+        "channelId": "UCgiO7Kxib0SZEG0DoeuBkdQ",
+        "title": "침펄풍과 런칭 파티.. 결국.. 마라먹었습니다 [라면꼰대4] EP.01",
+        "description": "라면꼰대의 시작은 역시\n@calmdownman_official 님과 @joopearl 님이죠..\n\n오늘은 유서깊은 장소에서 파티가 있답니다.\n김풍 작가님만의 개성 넘치는 파티에 혼절한 침펄...?!\n파티룩으로 둔갑한 군복쇼는 덤..\n그 기묘한 현장에 여러분들을 초대합니다!\n\n\n☕ 본 영상은 카누의 유료 광고를 포함하고 있습니다 ☕\n* KANU 카누 공식 홈페이지 https://www.kanu.co.kr/\n* KANU 카누 공식 네이버 브랜드 스토어 https://brand.naver.com/kanu\n\n[라면꼰대 시즌4]\n📌 더 다채로운 라면의 숨결을 찾아서...\n📌 매주 (화) 오후 6시 공개\n\n00:00 기묘한 파티의 시작\n00:58 예상치 못한 깜짝 손님\n04:48 먹고 싶은 거 사라매...\n07:46 군필자들이 환장하는 곳으로..\n09:56 사장님도 놀란 침착맨 파격 오버로크\n11:40 화사한 파티 속으로...\n15:02 제 1대 앰배서더(옾피셜)\n20:21 제사..아, 아니.. 파티 상차림\n23:12 너희가 제일 좋아하는 거로 골라봤어...\n26:34 분명 애프터눈 마라 파티였는데?\n29:32 마취: 마라에 취하다\n31:52 랜덤박스 포춘 공개\n34:00 서준맘과 뀰이 대디의 첫조우\n\n\n더밥스튜디오 구독하기 👉 https://www.youtube.com/@thebobstudio\n#THEBOB #더밥스튜디오 #라면꼰대 #라면꼰대4",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6sgjYvrj4cQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6sgjYvrj4cQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6sgjYvrj4cQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/6sgjYvrj4cQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/6sgjYvrj4cQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "the BOB studio | 더 밥 스튜디오",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-25T07:19:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xkmKNcsrXHapSf_snNe2uY3zUGg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tlqKMdR6Ho8"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-16T04:02:32Z",
+        "channelId": "UCiwQRG2sCcfjKkgxMEdJGPg",
+        "title": "[#전참시] 바자회하러 모여서 한국인의 밥상 찍는 이국주 X 풍자 X 신기루🍚🥄ㅣ#이국주 #풍자 #신기루 MBC230415방송",
+        "description": "[전지적 참견 시점] 토요일 밤 11시 10분 방송!\nMBC의 따끈따끈한 영상을 내 맘대로 편하게 즐기는 채널🌀 \n엠뚜루마뚜루 보러가기👉https://www.youtube.com/c/엠뚜루마뚜루\n-\n#전지적참견시점\n#엠뚜루마뚜루\n\n* 전지적 참견 시점 풀영상 보러가기\n✔ WAVVE : https://www.wavve.com/player/vod?programid=M_1003594100000100000\n\n✔ iMBC : http://playvod.imbc.com/templete/VodList?bid=1003594100000100000",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tlqKMdR6Ho8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tlqKMdR6Ho8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tlqKMdR6Ho8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tlqKMdR6Ho8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tlqKMdR6Ho8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-16T04:02:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Y6cn4k3oURb2slEZDv7Oen--09Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Z7_WWJEj-j8"
+      },
+      "snippet": {
+        "publishedAt": "2021-04-12T11:17:22Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "유사과학 월드컵 (이과답답주의)",
+        "description": "*칼 포퍼랑 토마스 쿤을 헷갈림\n*현대물리학과 고전물리학을 헷갈림\n*에고와 참나를 혼용하고 헷갈림\n등등 실수들이 있습니다만 너른 양해 부탁드립니다.\n고마워요~\n\n▶침착맨의 【이상형 월드컵】 모음: https://www.youtube.com/playlist?list=PLif_jr7pPZAAGRKOHgas0qm05Ha_wMUmN&disable_polymer=true\n\n▶침투부 인기동영상:  http://goo.gl/i7Uqj1\n▶침착맨 트위치 실시간방송:  http://www.twitch.tv/zilioner\n\n▶편집자: 전수만 (4호 침투부수호자)\n▶2021년 4월 7일 방송분\n\n#침착맨 #유사과학 #이상형월드컵",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Z7_WWJEj-j8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Z7_WWJEj-j8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Z7_WWJEj-j8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Z7_WWJEj-j8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Z7_WWJEj-j8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-12T11:17:22Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "OAwdqy0Hz36zftL7gmBoPVhEm7Q",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kz_JJzYHUm0"
+      },
+      "snippet": {
+        "publishedAt": "2021-08-29T08:16:52Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "연애, 못 하는가? 안 하는가?",
+        "description": "⭐2022년 7월 21일 ~ 7월 27일 침착맨 오마카세 선정 영상\n\n▶침착맨의 【일상재롱 영상】 모음: https://goo.gl/OJ4Uoa\n\n▶편집: 김태완 (2호 침투부수호자)\n▶2021년 8월 23일 방송분\n(https://youtu.be/C9sHks5ux0Q)\n\n#침착맨 #침펄풍 #연애",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kz_JJzYHUm0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kz_JJzYHUm0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kz_JJzYHUm0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/kz_JJzYHUm0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/kz_JJzYHUm0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-08-29T08:16:52Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "eIqsd9vtlU3prezNU5Vk-mwSto8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "S_hSDFNQrZs"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-26T13:20:31Z",
+        "channelId": "UC920m3pMPH45qztdhppZhwA",
+        "title": "[미신의 끝] 가위&주마등을 과학적으로 분석한다면? #highlight#유퀴즈온더블럭 | YOU QUIZ ON THE BLOCK EP.191",
+        "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n#유퀴즈 #유재석 #조세호\n유퀴즈온더블럭 YOU QUIZ ON THE BLOCK EP.191\n#태양은 가득히\n매주 (수) 저녁 8시 40분 tvN 방송\n\n#티빙에서스트리밍",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/S_hSDFNQrZs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/S_hSDFNQrZs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/S_hSDFNQrZs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/S_hSDFNQrZs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/S_hSDFNQrZs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "유 퀴즈 온 더 튜브",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-26T13:20:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "72QkIaEq7unGo3WiJXS5YNcQSMw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BFcDdCOtfb8"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-27T06:41:28Z",
+        "channelId": "UCy-H-BPCHctNmUb80MeapvQ",
+        "title": "침착맨 채팅 부검하기 | 철면수심",
+        "description": "안녕하세요 철면수심입니다. \n\n[2021년 12월 20일 방송입니다.]\n\n트위치 : http://www.twitch.tv/109ace\n트게더 : http://tgd.kr/109ace\n인스타그램 @109ace\n\n\n\n#철면수심 #침착맨 #단군",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BFcDdCOtfb8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BFcDdCOtfb8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BFcDdCOtfb8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BFcDdCOtfb8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BFcDdCOtfb8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "철면수심",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-27T06:41:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "D9NWPvWKLtiDNaTN0VQ9DzmwXf8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "4w7TcS7Dbc8"
+      },
+      "snippet": {
+        "publishedAt": "2020-01-30T09:25:16Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "소소하게 싸움나는 음식 먹는 방법 월드컵",
+        "description": "▶침착맨의 【이상형 월드컵】 모음 : https://www.youtube.com/playlist?list=PLif_jr7pPZAAGRKOHgas0qm05Ha_wMUmN&disable_polymer=true\n\n▶침투부 영상에 자막 달기 (감사합니다) : https://bit.ly/2OJDF8O\n▶침투부 인기동영상 :  http://goo.gl/i7Uqj1\n▶침착맨 트위치 실시간방송 :  http://www.twitch.tv/zilioner\n\n▶편집자 : 장효범 (6호 침투부수호자)\n▶2020년 1월 27일 방송분\n\n#주호민 #김풍 #이상형월드컵 #침착맨",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4w7TcS7Dbc8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4w7TcS7Dbc8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4w7TcS7Dbc8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4w7TcS7Dbc8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4w7TcS7Dbc8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-01-30T09:25:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cNWXq7x2UUVbVCq1qWww36KaIBg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gwbLBsvWV_Y"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-02T07:26:04Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "다나카 초대석",
+        "description": "▶관련 영상\n  •다나카와 함께하는 한국 국물요리 월드컵: https://youtu.be/4LKF086ky_s\n\n▶관련 재생목록\n  •침착맨의 일상재롱: https://goo.gl/OJ4Uoa\n\n▶생방송 원본\n  •2023년 2월 20일 방송분: https://www.youtube.com/live/R6rwBp-JTb4\n\n▶출연\n  •다나카(@NamollaFamily-Hotshow), 김풍, 침착맨\n\n#침착맨 #다나카 #김풍",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gwbLBsvWV_Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gwbLBsvWV_Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gwbLBsvWV_Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gwbLBsvWV_Y/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gwbLBsvWV_Y/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-02T07:26:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BXd9m_octrYvKHisxx_aGfh96ws",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "m4TzpZjabQM"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-07T12:24:55Z",
+        "channelId": "UCDNvRZRgvkBTUkQzFoT_8rA",
+        "title": "[ENG] 가짜의 삶은 핑계고",
+        "description": "제 주변에 ‘가짜의 삶’을 사는 대표적인 분들이 계세요.\n그분들과 ‘가짜의 삶’에 대해 논해보는 아주 심도깊고 귀한 시간 가져보려 합니다.\n\n사실 다~~ 핑계고🐓\n토크 좋아하는 사람들끼리 또 한사바리 떠들어제껴봤습니다.\nㅡㅡㅡ\n유선배 복지 콘텐츠 🐓핑계고🐓\n우리도 언제 올릴지 몰라요 ⚠불시 업로드⚠\n☁구독 & 좋아요 & 알림설정 필수☁\n\n👇’뜬뜬’ 소식 보러가기\n[https://instagram.com/ddeun._.ddeun]\n#뜬뜬 #핑계고 #유재석 #지석진 #홍진경 #조세호 #가짜의삶\n\n*본 콘텐츠와 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 비난 및 조롱 등 악의적인 댓글은 무통보 삭제될 수 있습니다.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/m4TzpZjabQM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/m4TzpZjabQM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/m4TzpZjabQM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/m4TzpZjabQM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/m4TzpZjabQM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "뜬뜬 DdeunDdeun",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-07T12:24:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "L57AU2mfxfM-sO62wmZJpwzqiDk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0GVTi9nQoN8"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-05T07:19:54Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "침펄풍 밸런스 게임",
+        "description": "▶관련 재생목록\n  •침착맨의 일상재롱: https://goo.gl/OJ4Uoa\n\n▶생방송 원본\n  •2022년 11월 29일 방송분: https://youtu.be/xPLwCfxN4dw\n\n▶출연\n  •주호민(@joopearl), 김풍, 침착맨\n\n#침착맨 #주호민 김풍 #밸런스게임",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0GVTi9nQoN8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0GVTi9nQoN8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0GVTi9nQoN8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0GVTi9nQoN8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0GVTi9nQoN8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-05T07:19:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iuPskny-rTEvImmGYPo1HtslMHQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gcRzKVztwK4"
+      },
+      "snippet": {
+        "publishedAt": "2019-03-26T10:08:01Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "듣기 싫은 꼰대어 월드컵",
+        "description": "♨침착맨의 【이상형 월드컵】 모음: https://www.youtube.com/playlist?list=PLif_jr7pPZAAGRKOHgas0qm05Ha_wMUmN&disable_polymer=true\n\n침투부 인기동영상 :  http://goo.gl/i7Uqj1\n침착맨 유투부 구독하기 :  http://goo.gl/wzc7Ib\n침착맨 트위치 실시간방송 :  http://www.twitch.tv/zilioner\n\n2019년 3월 25일 방송분\n\n편집자: 3대 침투부수호자",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gcRzKVztwK4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gcRzKVztwK4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gcRzKVztwK4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gcRzKVztwK4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gcRzKVztwK4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-03-26T10:08:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BT2KJq4nGtR0daTkrhmT-tUiQaU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Ynn6cHoPWbE"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-17T02:45:32Z",
+        "channelId": "UCUj6rrhMTR9pipbAWBAMvUQ",
+        "title": "미라는 왜 만들어졌을까?",
+        "description": "▶관련 영상\n  •이집트 전문가의 카트라이더 이집트 맵 분석하기: https://youtu.be/vagBS9UA6RE\n\n▶관련 재생목록\n  •침착맨과 특강: https://youtube.com/playlist?list=PLif_jr7pPZACfoFhBRTYpuhGn9etcTS3n\n\n▶생방송 원본\n  •2023년 3월 3일 방송분: https://www.youtube.com/live/ELcb7WBDqYg\n\n▶출연\n  •곽민수, 침착맨\n\n#침착맨 #곽민수 #이집트",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Ynn6cHoPWbE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Ynn6cHoPWbE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Ynn6cHoPWbE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Ynn6cHoPWbE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Ynn6cHoPWbE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "침착맨",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-17T02:45:32Z"
+      }
+    }
+  ]
+}

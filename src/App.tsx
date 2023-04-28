@@ -15,11 +15,11 @@ const router = createBrowserRouter([
         element: <VideoList />,
       },
       {
-        path: "/videos",
-        element: <Navigate to="/" />,
+        path: "/search",
+        element: <VideoList />,
       },
       {
-        path: "/videos/:videoId",
+        path: "/detail/:videoId",
         element: <VideoDetail />,
       },
     ],
