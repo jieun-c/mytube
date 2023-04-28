@@ -1,6 +1,6 @@
 import { atom, selector } from "recoil";
 import { getSearchData, getPopularData, getRelatedData } from "./../service";
-import { getPopularMock, getSearchMock, getRelatedMock } from "../service";
+// import { getPopularMock, getSearchMock, getRelatedMock } from "../service";
 import { sessionStorageEffect } from "../utils";
 import { IVideosInfo, VIDEO_KEYS, IVideo, VIDEO_TYPE } from "./../types";
 
@@ -21,15 +21,15 @@ export const videosInfoAtom = selector({
     if (currentKey[1].type === VIDEO_TYPE.SEARCH) {
       return {
         queryKey: currentKey,
-        queryFn: () => getSearchMock(currentKey[2].search ?? ""),
+        queryFn: () => getSearchData(currentKey[2].search ?? ""),
       } as IVideosInfo;
     } else if (currentKey[1].type === VIDEO_TYPE.RELATED) {
       return {
         queryKey: currentKey,
-        queryFn: () => getRelatedMock(currentKey[3].detailId ?? ""),
+        queryFn: () => getRelatedData(currentKey[3].detailId ?? ""),
       } as IVideosInfo;
     }
-    return { queryKey: currentKey, queryFn: () => getPopularMock() } as IVideosInfo;
+    return { queryKey: currentKey, queryFn: () => getPopularData() } as IVideosInfo;
   },
 });
 
