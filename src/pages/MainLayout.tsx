@@ -5,6 +5,7 @@ const MainLayout = () => {
   return (
     <>
       <Header />
+      <div className="pb-[60px]" />
       <div className="p-3 mx-auto max-w-7xl">
         <Outlet />
       </div>

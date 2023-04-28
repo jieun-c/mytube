@@ -55,7 +55,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white w-full fixed z-50">
       <div className="max-w-7xl mx-auto flex justify-between p-3">
         <div className="flex items-center mr-3 cursor-pointer" onClick={onReset}>
           <MdOndemandVideo size="30" color="red" title="mytube-logo" />
