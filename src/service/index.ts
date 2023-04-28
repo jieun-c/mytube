@@ -1,4 +1,5 @@
 import axios from "axios";
+import { IVideo } from "../types";
 
 const { VITE_YOUTUBE_API_BASE_URL: BASE_URL, VITE_YOUTUBE_API_KEY: KEY } = import.meta.env;
 
@@ -34,8 +35,8 @@ export const getSearchData = async (query: string) => {
     throw Error;
   }
 
-  const filteredItems = response.data.items.filter((item: any) => !item.id.channelId);
-  return filteredItems.map((item: any) => ({ ...item, id: item.id.videoId }));
+  const filteredItems = response.data.items.filter((item: IVideo) => !item.id.channelId);
+  return filteredItems.map((item: IVideo) => ({ ...item, id: item.id.videoId }));
 };
 
 export const getRelatedData = async (id: string) => {
@@ -54,8 +55,8 @@ export const getRelatedData = async (id: string) => {
     throw Error;
   }
 
-  const filteredItems = response.data.items.filter((item: any) => !item.id.channelId);
-  return filteredItems.map((item: any) => ({ ...item, id: item.id.videoId }));
+  const filteredItems = response.data.items.filter((item: IVideo) => !item.id.channelId);
+  return filteredItems.map((item: IVideo) => ({ ...item, id: item.id.videoId }));
 };
 
 export const getCurrentData = async (id: string) => {
@@ -82,21 +83,21 @@ export const getPopularMock = () => {
 };
 
 // Mock Data - Search
-export const getSearchMock = (query: string) => {
+export const getSearchMock = (_query: string) => {
   return fetch("/mock/search.json")
     .then((res) => res.json())
     .then((data) => data.items.map((item: any) => ({ ...item, id: item.id.videoId })));
 };
 
 // Mock Data - Related
-export const getRelatedMock = (id: string) => {
+export const getRelatedMock = (_id: string) => {
   return fetch("/mock/related.json")
     .then((res) => res.json())
     .then((data) => data.items.map((item: any) => ({ ...item, id: item.id.videoId })));
 };
 
 // Mock Data - Current
-export const getCurrentMock = (id: string) => {
+export const getCurrentMock = (_id: string) => {
   return fetch("/mock/current.json")
     .then((res) => res.json())
     .then((data) => data.items);

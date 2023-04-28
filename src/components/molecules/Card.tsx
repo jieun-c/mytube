@@ -15,7 +15,7 @@ const Card = ({ video }: { video: IVideo }) => {
   } = video.snippet;
 
   const navigate = useNavigate();
-  const [keys, setKeys] = useRecoilState(videoKeysAtom);
+  const [_keys, setKeys] = useRecoilState(videoKeysAtom);
 
   const movePage = () => {
     setKeys((prev) => [prev[0], { type: VIDEO_TYPE.RELATED }, prev[2], { detailId: video.id }]);

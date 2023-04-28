@@ -33,7 +33,7 @@ export const sessionStorageEffect =
     if (savedValue !== null) {
       setSelf(JSON.parse(savedValue));
     }
-    onSet((newValue: any, _: any, isReset: any) => {
+    onSet((newValue: any, _: any, _isReset: any) => {
       const confirm = newValue.length === 0;
       confirm
         ? sessionStorage.removeItem(key)
