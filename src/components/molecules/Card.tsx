@@ -12,13 +12,14 @@ const Card = ({ video }: { video: IVideo }) => {
     thumbnails: {
       medium: { url },
     },
+    channelId,
   } = video.snippet;
 
   const navigate = useNavigate();
   const [_keys, setKeys] = useRecoilState(videoKeysAtom);
 
   const movePage = () => {
-    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.RELATED }, prev[2], { detailId: video.id }]);
+    setKeys((prev) => ({ ...prev, type: VIDEO_TYPE.RELATED, detailId: video.id, channelId }));
     navigate(`/detail/${video.id}`, { state: { data: video } });
   };
 

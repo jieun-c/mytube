@@ -4,13 +4,17 @@ import { useQuery } from "@tanstack/react-query";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { currentVideoAtom, videosInfoAtom } from "../store";
 import { IVideo } from "../types";
-import { getCurrentMock } from "../service";
+import { getCurrentData } from "../service";
 import Card from "../components/molecules/Card";
 import Loading from "../components/molecules/Loading";
 
 const VideoDetail = () => {
   const { queryKey, queryFn } = useRecoilValue(videosInfoAtom);
-  const { isLoading, isError, data: videos } = useQuery({ queryKey, queryFn });
+  const {
+    isLoading,
+    isError,
+    data: videos,
+  } = useQuery({ queryKey, queryFn, staleTime: 60 * 5000, refetchOnWindowFocus: false });
   const params = useParams();
   const location = useLocation();
   const [currentVideo, setCurrentVideo] = useRecoilState(currentVideoAtom);
@@ -23,7 +27,7 @@ const VideoDetail = () => {
       setCurrentVideo(data);
     } else if (params.videoId) {
       // 주소 직접 접근시 데이터가 없으므로 currentVideo 서비스 호출
-      getCurrentMock(params.videoId).then((data: any) => setCurrentVideo(data[0]));
+      getCurrentData(params.videoId).then((data: any) => setCurrentVideo(data[0] as IVideo));
     } else {
       throw Error;
     }

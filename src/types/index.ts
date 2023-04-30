@@ -5,15 +5,16 @@ export const VIDEO_TYPE = {
 };
 type VIDEO_TYPE = (typeof VIDEO_TYPE)[keyof typeof VIDEO_TYPE];
 
-export type VIDEO_KEYS = [
-  string,
-  { type: VIDEO_TYPE },
-  { search: string | undefined },
-  { detailId: string | undefined }
-];
+export interface VIDEO_KEYS {
+  key: string;
+  type: string;
+  search: string;
+  detailId: string;
+  channelId: string;
+}
 
 export interface IVideosInfo {
-  queryKey: VIDEO_KEYS;
+  queryKey: string[];
   queryFn: () => Promise<any>;
 }
 

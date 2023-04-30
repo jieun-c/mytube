@@ -10,13 +10,14 @@ export const getPopularData = async () => {
       regionCode: "KR",
       part: "snippet",
       chart: "mostPopular",
-      maxResults: "25",
+      maxResults: "50",
     },
   });
 
   if (response.status >= 400 && response.status <= 599) {
     throw Error;
   }
+
   return response.data.items;
 };
 
@@ -26,7 +27,7 @@ export const getSearchData = async (query: string) => {
       key: KEY,
       regionCode: "KR",
       part: "snippet",
-      maxResults: "25",
+      maxResults: "50",
       q: query,
     },
   });
@@ -39,24 +40,36 @@ export const getSearchData = async (query: string) => {
   return filteredItems.map((item: IVideo) => ({ ...item, id: item.id.videoId }));
 };
 
-export const getRelatedData = async (id: string) => {
-  const response = await axios.get(`${BASE_URL}/search`, {
+export const getRelatedData = async (channelId: string) => {
+  const { data: playlists } = await axios.get(`${BASE_URL}/playlists`, {
+    params: {
+      key: KEY,
+      part: "snippet",
+      maxResults: "50",
+      channelId,
+    },
+  });
+
+  const originIds = playlists.items.map((item: any) => {
+    const url = item.snippet.thumbnails.default.url;
+    const videoId = url.split("/")[url.split("/").length - 2];
+    return videoId;
+  });
+
+  const set = new Set(originIds);
+  const videoIds = [...set];
+
+  const { data: videos } = await axios.get(`${BASE_URL}/videos`, {
     params: {
       key: KEY,
       regionCode: "KR",
       part: "snippet",
-      maxResults: "25",
-      type: "video",
-      relatedToVideoId: id,
+      maxResults: "50",
+      id: videoIds.join(","),
     },
   });
 
-  if (response.status >= 400 && response.status <= 599) {
-    throw Error;
-  }
-
-  const filteredItems = response.data.items.filter((item: IVideo) => !item.id.channelId);
-  return filteredItems.map((item: IVideo) => ({ ...item, id: item.id.videoId }));
+  return videos.items;
 };
 
 export const getCurrentData = async (id: string) => {

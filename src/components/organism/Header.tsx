@@ -4,11 +4,13 @@ import { useRecoilState } from "recoil";
 import { MdOndemandVideo, MdSearch } from "react-icons/md";
 import { videoKeysAtom } from "../../store";
 import { VIDEO_TYPE } from "../../types";
+import { getCurrentData } from "../../service";
 
 const Header = () => {
   const [keys, setKeys] = useRecoilState(videoKeysAtom);
-  const [input, setInput] = useState(keys[2].search ?? "");
+  const [input, setInput] = useState(keys.search ?? "");
   const navigate = useNavigate();
+
   const params = useParams();
   const mainMatch = useMatch("/");
   const detailMatch = useMatch("/detail/:videoId");
@@ -17,16 +19,39 @@ const Header = () => {
   // 주소직접접근, 뒤로가기 를 위한 초기화
   useEffect(() => {
     if (mainMatch) {
-      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }]);
+      setKeys((prev) => ({
+        ...prev,
+        type: VIDEO_TYPE.POPULAR,
+        search: "",
+        detailId: "",
+        channelId: "",
+      }));
     } else if (searchMatch) {
-      setKeys((prev) => [prev[0], { type: VIDEO_TYPE.SEARCH }, prev[2], { detailId: "" }]);
+      setKeys((prev) => ({
+        ...prev,
+        type: VIDEO_TYPE.SEARCH,
+        detailId: "",
+        channelId: "",
+      }));
     } else if (detailMatch) {
-      setKeys((prev) => [
-        prev[0],
-        { type: VIDEO_TYPE.RELATED },
-        prev[2],
-        { detailId: params.videoId },
-      ]);
+      if (!keys.channelId) {
+        // 주소 직접 접근시 데이터가 없으므로 currentVideo 서비스 호출
+        getCurrentData(params.videoId ?? "").then((data: any) => {
+          setKeys((prev) => ({
+            ...prev,
+            type: VIDEO_TYPE.RELATED,
+            detailId: params.videoId ?? "",
+            channelId: data[0].snippet.channelId,
+          }));
+        });
+      } else {
+        setKeys((prev) => ({
+          ...prev,
+          type: VIDEO_TYPE.RELATED,
+          detailId: params.videoId ?? "",
+          channelId: keys.channelId,
+        }));
+      }
     }
   }, [mainMatch, searchMatch, detailMatch]);
 
@@ -40,7 +65,11 @@ const Header = () => {
     const str = input.replace(/^\s+|\s+$/gm, "");
     if (!str) return;
 
-    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.SEARCH }, { search: str }, prev[3]]);
+    setKeys((prev) => ({
+      ...prev,
+      type: VIDEO_TYPE.SEARCH,
+      search: str,
+    }));
     setInput(str);
     navigate({
       pathname: "/search",
@@ -49,7 +78,13 @@ const Header = () => {
   };
 
   const onReset = () => {
-    setKeys((prev) => [prev[0], { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }]);
+    setKeys((prev) => ({
+      ...prev,
+      type: VIDEO_TYPE.POPULAR,
+      search: "",
+      detailId: "",
+      channelId: "",
+    }));
     setInput("");
     navigate("/");
   };

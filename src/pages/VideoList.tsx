@@ -7,7 +7,11 @@ import Card from "../components/molecules/Card";
 
 const VideoList = () => {
   const { queryKey, queryFn } = useRecoilValue(videosInfoAtom);
-  const { isLoading, isError, data: videos } = useQuery({ queryKey, queryFn });
+  const {
+    isLoading,
+    isError,
+    data: videos,
+  } = useQuery({ queryKey, queryFn, staleTime: 60 * 5000, refetchOnWindowFocus: false });
 
   if (isLoading) return <Loading />;
   if (isError) throw Error;

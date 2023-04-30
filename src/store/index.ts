@@ -7,7 +7,13 @@ import { IVideosInfo, VIDEO_KEYS, IVideo, VIDEO_TYPE } from "./../types";
 // (q, videoId 가 분리되어있어 sessionStorage 로 데이터 관리)
 export const videoKeysAtom = atom({
   key: "videoKeysAtom",
-  default: ["videos", { type: VIDEO_TYPE.POPULAR }, { search: "" }, { detailId: "" }] as VIDEO_KEYS,
+  default: {
+    key: "videos",
+    type: VIDEO_TYPE.POPULAR,
+    search: "",
+    detailId: "",
+    channelId: "",
+  } as VIDEO_KEYS,
   effects: [sessionStorageEffect("videoKeys")],
 });
 
@@ -18,18 +24,18 @@ export const videosInfoAtom = selector({
     const currentKey = get(videoKeysAtom);
 
     // 구독한 key 에 따라, fn 과 함께 묶어서 return 한다.
-    if (currentKey[1].type === VIDEO_TYPE.SEARCH) {
+    if (currentKey.type === VIDEO_TYPE.SEARCH) {
       return {
-        queryKey: currentKey,
-        queryFn: () => getSearchData(currentKey[2].search ?? ""),
+        queryKey: Object.values(currentKey),
+        queryFn: () => getSearchData(currentKey.search ?? ""),
       } as IVideosInfo;
-    } else if (currentKey[1].type === VIDEO_TYPE.RELATED) {
+    } else if (currentKey.type === VIDEO_TYPE.RELATED) {
       return {
-        queryKey: currentKey,
-        queryFn: () => getRelatedData(currentKey[3].detailId ?? ""),
+        queryKey: Object.values(currentKey),
+        queryFn: () => getRelatedData(currentKey.channelId ?? ""),
       } as IVideosInfo;
     }
-    return { queryKey: currentKey, queryFn: () => getPopularData() } as IVideosInfo;
+    return { queryKey: Object.values(currentKey), queryFn: () => getPopularData() } as IVideosInfo;
   },
 });
 
